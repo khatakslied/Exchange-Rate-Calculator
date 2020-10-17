@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="exchangeappicon.png" alt="" class="money-img" />
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose currency and amount to convert</p>
+
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="EUR">EUR &#128182</option>
+          <option value="GBP">GBP &#128183</option>
+          <option value="JPY">JPY &#128180</option>
+          <option value="USD" selected>USD &#128181</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="invert">Invert &#128259</button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select id="currency-two">
+          <option value="EUR" selected>EUR &#128182</option>
+          <option value="GBP">GBP &#128183</option>
+          <option value="JPY">JPY &#128180</option>
+          <option value="USD">USD &#128181</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
